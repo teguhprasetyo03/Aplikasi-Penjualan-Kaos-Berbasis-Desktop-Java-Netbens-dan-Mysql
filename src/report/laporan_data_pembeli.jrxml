@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9aade54b-03d6-4aa0-aedf-e7b2f5378d66">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="126"/>
+	<property name="ireport.y" value="32"/>
+	<queryString>
+		<![CDATA[SELECT
+     tb_pembeli.`id_pembeli` AS tb_pembeli_id_pembeli,
+     tb_pembeli.`nama_pembeli` AS tb_pembeli_nama_pembeli,
+     tb_pembeli.`alamat` AS tb_pembeli_alamat,
+     tb_pembeli.`jenis_kelamin` AS tb_pembeli_jenis_kelamin,
+     tb_pembeli.`umur` AS tb_pembeli_umur,
+     tb_pembeli.`alamat_email` AS tb_pembeli_alamat_email
+FROM
+     `tb_pembeli` tb_pembeli]]>
+	</queryString>
+	<field name="tb_pembeli_id_pembeli" class="java.lang.Integer"/>
+	<field name="tb_pembeli_nama_pembeli" class="java.lang.String"/>
+	<field name="tb_pembeli_alamat" class="java.lang.String"/>
+	<field name="tb_pembeli_jenis_kelamin" class="java.lang.String"/>
+	<field name="tb_pembeli_umur" class="java.lang.Integer"/>
+	<field name="tb_pembeli_alamat_email" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="142" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1ecdec4e-aad7-4f49-a081-e886d8e10b78" x="309" y="0" width="236" height="47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lato" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COOL GAMES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9440ee55-f68d-4c26-bd0e-2306720cb070" x="229" y="65" width="393" height="63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lato" size="24"/>
+				</textElement>
+				<text><![CDATA[Jl. Urip Sumoharjo Trenggalek Ciloto Jawa Selatan Propinsi Indonesia]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="70c5350f-b8f4-466b-8c56-8a060612c633" x="47" y="0" width="119" height="128"/>
+				<imageExpression><![CDATA["/Users/user/NetBeansProjects/Aplikasi Penjualan Kaos/src/asset/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="94516f12-daa0-4cb2-bb70-be2d094aca17" x="272" y="0" width="283" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lato" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PEMBELI]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="310" y="22" width="137" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="447" y="22" width="124" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="571" y="22" width="131" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="130" y="22" width="117" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="47" y="22" width="83" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="431e2a88-548a-40b1-baea-9d44abd0d5a5" x="310" y="22" width="137" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JENIS KELAMIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="29c5621f-563a-40a5-91ca-4a18f10a1510" x="447" y="22" width="124" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dc24f567-4cb8-49ba-a7c7-cb2b007efb25" x="571" y="22" width="131" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="66c5d9d0-af9c-4dc3-9c41-399642ca2249" x="47" y="24" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID PEMBELI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b3504a7-8148-4eee-a5a2-a30bd2da1727" x="130" y="22" width="117" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA PEMBELI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b3504a7-8148-4eee-a5a2-a30bd2da1727" x="248" y="22" width="58" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA PEMBELI]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="248" y="22" width="61" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="29c5621f-563a-40a5-91ca-4a18f10a1510" x="247" y="22" width="63" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UMUR]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="0881ce53-efdf-4c11-b472-ff612436ae2a" x="247" y="0" width="62" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="6e8ac4fc-0d9a-466a-92d7-61cec85a1438" x="310" y="0" width="137" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="028d1b3e-eb82-4837-9c53-f0372d1ece76" x="447" y="0" width="124" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7d10aa73-28f0-4370-a428-522d87fdb621" x="130" y="0" width="117" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7d10aa73-28f0-4370-a428-522d87fdb621" x="47" y="0" width="83" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="3702125d-2a70-4402-8da5-9a03a15d7d87" x="571" y="0" width="131" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="2adf7fa6-083d-4ca9-98fd-fd26745bb5c0" x="47" y="2" width="83" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_pembeli_id_pembeli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2f139d3f-ea69-439b-b28d-931d75ffac62" x="130" y="0" width="117" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_pembeli_nama_pembeli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eb243aa7-b5b8-481c-8946-f75852705579" x="311" y="0" width="134" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_pembeli_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c17c0bb8-d331-4f0e-9042-af859001d952" x="248" y="0" width="61" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_pembeli_umur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ffb4f0fe-eb32-444c-a911-79b71eec9269" x="571" y="2" width="131" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_pembeli_alamat_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="77eb3c54-f7cc-445c-9258-c5bab4d2d1ff" x="447" y="0" width="124" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_pembeli_alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="373c1af2-3d2b-4129-8626-a995a5a72ee7" x="571" y="0" width="51" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[JAKARTA,	]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement uuid="a4b74e84-6d08-4bb1-8fc9-e57859736119" x="622" y="0" width="80" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fe255f4f-7d9b-4cb9-8d46-7ade36740860" x="602" y="20" width="78" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d7e644a2-9003-43cd-9568-2164b789bb38" x="584" y="95" width="118" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(..................................)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fe255f4f-7d9b-4cb9-8d46-7ade36740860" x="602" y="40" width="78" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Admin]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="88eff21a-c4d6-48f8-a7f5-6f0105fd692b" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>

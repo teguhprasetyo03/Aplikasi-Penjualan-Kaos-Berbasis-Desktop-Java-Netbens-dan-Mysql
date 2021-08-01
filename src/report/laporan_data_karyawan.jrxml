@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9aade54b-03d6-4aa0-aedf-e7b2f5378d66">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="40"/>
+	<queryString>
+		<![CDATA[SELECT
+     tb_karyawan.`id_karyawan` AS tb_karyawan_id_karyawan,
+     tb_karyawan.`nama_karyawan` AS tb_karyawan_nama_karyawan,
+     tb_karyawan.`no_hp` AS tb_karyawan_no_hp,
+     tb_karyawan.`jabatan` AS tb_karyawan_jabatan,
+     tb_karyawan.`alamat` AS tb_karyawan_alamat
+FROM
+     `tb_karyawan` tb_karyawan]]>
+	</queryString>
+	<field name="tb_karyawan_id_karyawan" class="java.lang.Integer"/>
+	<field name="tb_karyawan_nama_karyawan" class="java.lang.String"/>
+	<field name="tb_karyawan_no_hp" class="java.lang.String"/>
+	<field name="tb_karyawan_jabatan" class="java.lang.String"/>
+	<field name="tb_karyawan_alamat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="142" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1ecdec4e-aad7-4f49-a081-e886d8e10b78" x="309" y="0" width="236" height="47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lato" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COOL GAMES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9440ee55-f68d-4c26-bd0e-2306720cb070" x="229" y="65" width="393" height="63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lato" size="24"/>
+				</textElement>
+				<text><![CDATA[Jl. Urip Sumoharjo Trenggalek Ciloto Jawa Selatan Propinsi Indonesia]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="70c5350f-b8f4-466b-8c56-8a060612c633" x="47" y="0" width="119" height="128"/>
+				<imageExpression><![CDATA["/Users/user/NetBeansProjects/Aplikasi Penjualan Kaos/src/asset/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="94516f12-daa0-4cb2-bb70-be2d094aca17" x="272" y="0" width="283" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Lato" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA KARYAWAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="310" y="22" width="137" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="447" y="22" width="124" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="571" y="22" width="131" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="166" y="22" width="143" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d94bc08b-7a8d-4783-9d99-3518337ea50b" x="47" y="22" width="119" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="9d114915-3dd7-48f5-9c56-aa3f744c03ad" x="47" y="22" width="119" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID KARYAWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b7ad69a7-fefb-42b1-831e-cd6652415a9c" x="166" y="22" width="143" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA KARYAWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="431e2a88-548a-40b1-baea-9d44abd0d5a5" x="310" y="22" width="137" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO HANDPHONE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="29c5621f-563a-40a5-91ca-4a18f10a1510" x="447" y="22" width="124" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JABATAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dc24f567-4cb8-49ba-a7c7-cb2b007efb25" x="571" y="22" width="131" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="6e8ac4fc-0d9a-466a-92d7-61cec85a1438" x="310" y="0" width="137" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="028d1b3e-eb82-4837-9c53-f0372d1ece76" x="447" y="0" width="124" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7d10aa73-28f0-4370-a428-522d87fdb621" x="166" y="0" width="143" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="7d10aa73-28f0-4370-a428-522d87fdb621" x="47" y="0" width="119" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="32d52e96-02c8-47c4-8bf7-03102f669845" x="47" y="2" width="119" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_karyawan_id_karyawan}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="3702125d-2a70-4402-8da5-9a03a15d7d87" x="571" y="0" width="131" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="24c0e312-f5cd-4add-8c49-b421eb4515dd" x="166" y="2" width="143" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_karyawan_nama_karyawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="21fc0392-c202-426a-b186-8184ad8875ae" x="310" y="0" width="137" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_karyawan_no_hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6e6f4029-67cf-424a-a7d9-3b01c01226a2" x="445" y="0" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_karyawan_jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d60eda4c-88a3-4552-8989-3316ffd41a16" x="571" y="2" width="131" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tb_karyawan_alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="373c1af2-3d2b-4129-8626-a995a5a72ee7" x="571" y="0" width="51" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[JAKARTA,	]]></text>
+			</staticText>
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement uuid="a4b74e84-6d08-4bb1-8fc9-e57859736119" x="622" y="0" width="80" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fe255f4f-7d9b-4cb9-8d46-7ade36740860" x="602" y="20" width="78" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d7e644a2-9003-43cd-9568-2164b789bb38" x="584" y="95" width="118" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(..................................)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fe255f4f-7d9b-4cb9-8d46-7ade36740860" x="602" y="40" width="78" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Admin]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="88eff21a-c4d6-48f8-a7f5-6f0105fd692b" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>
